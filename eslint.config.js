@@ -11,12 +11,12 @@ export default defineConfig([
     rules: {
       "no-unused-vars": "warn",
       "no-undef": "warn",
-      "no-console": process.env.NODE_ENV === "production" ? "error" : "warn"
+      "no-console": process.env.NODE_ENV === "production" ? "error" : "warn",
     },
     languageOptions: {
       globals: {
-        console: "readonly"
-      }
-    }
+        console: "readonly",
+      },
+    },
   },
 ]);
