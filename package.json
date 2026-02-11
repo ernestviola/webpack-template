@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "test-watch": "jest --watch *.js",
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack serve --config webpack.dev.js",
     "deploy": "git add dist -f && git commit -m 'Deployment commit' && git subtree push --prefix dist origin gh-pages",
@@ -23,10 +24,12 @@
   },
   "homepage": "https://github.com/ernestviola/todo-list#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.29.0",
     "@eslint/js": "^9.39.2",
     "css-loader": "^7.1.2",
     "eslint": "^9.39.2",
     "html-webpack-plugin": "^5.6.5",
+    "jest": "^30.2.0",
     "prettier": "3.8.0",
     "style-loader": "^4.0.0",
     "webpack": "^5.104.1",
